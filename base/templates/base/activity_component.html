@@ -2,7 +2,7 @@
     <div class="activities__header">
         <h2>Recent Activities</h2>
     </div>
-    {% for message in room_messages %}
+    {% for message in blog_messages %}
     <div class="activities__box">
         <div class="activities__boxHeader roomListRoom__header">
             <a href="{% url 'user-profile' message.user.id %}" class="roomListRoom__author">
@@ -30,7 +30,7 @@
 
         </div>
         <div class="activities__boxContent">
-            <p>replied to post “<a href="{% url 'room' message.room.id %}">{{message.room}}</a>”</p>
+            <p>replied to post “<a href="{% url 'blog' message.blog.id %}">{{message.blog}}</a>”</p>
             <div class="activities__boxRoomContent">{{message.body}}</div>
         </div>
     </div>

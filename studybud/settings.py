@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     "corsheaders",
+    'taggit',
 ]
 
 AUTH_USER_MODEL = 'base.User'

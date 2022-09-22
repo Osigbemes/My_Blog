@@ -1,8 +1,8 @@
 from rest_framework.serializers import ModelSerializer
-from base.models import Room
+from base.models import Blog
 
 
-class RoomSerializer(ModelSerializer):
+class BlogSerializer(ModelSerializer):
     class Meta:
-        model = Room
+        model = Blog
         fields = '__all__'

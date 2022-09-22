@@ -13,16 +13,16 @@
 
     <div>
 
-        <h1>{{room.name}}</h1>
+        <h1>{{blog.name}}</h1>
 
-        <p>{{room.description}}</p>
+        <p>{{blog.description}}</p>
 
 
         <div class="comment-wrapper">
             <h3>Conversation</h3>
             <hr>
 
-            {% for message in room_messages %}
+            {% for message in blog_messages %}
             <div>
                 {% if request.user == message.user %}
                 <a href="{% url 'delete-message' message.id %}">Delete</a>
